@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+form{
+    margin: 10px 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+}
+.form-group{
+    width: 100%;
+
+}
+label{
+    font-size: 18px;
+}
+.form__input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    outline: none;
+    margin: 10px 0;
+    letter-spacing: .5px;
+    border: none;
+    font-size: 20px;
+}
+.form__input:focus{
+    border-bottom:2px solid #24cf5f;
+}
+.form__input::placeholder{
+    font-size: 1.2rem;
+}
+.form__btn{
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #24cf5f;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size:1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+.btn{
+    padding: 6px 15px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size:1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+.btn-delete{
+    color: #ffffff;
+    background-color: #f73737;
+    text-transform: capitalize;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+.btn-edit{
+    color: #ffffff;
+    background-color: #788b8a;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.btn-delete:hover{
+    cursor: pointer;
+}
+.btn-edit:hover{
+    cursor: pointer;
+}
+.form__btn:hover{
+    background-color: #1fbb56;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.form__btn:active{
+    transform: scale(1);
+}
+/*
+===========STYLE CARD
+*/
+
+.card{
+    margin: 10px 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4776cc;
+    background-image: linear-gradient(to top,
+        #afc4ad 0%,
+        #7ea194 100%
+    );
+    border-radius: 4px;
+    height: auto;
+    position: relative;
+}
+
+.card__content{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+.card__content h3{
+    font-size: 1.4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #2f3131 0%,rgba(57, 68, 54, 0.067) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    position: relative;
+    -webkit-text-fill-color: transparent;
+    
+}
+.card__content p{
+    letter-spacing: 1.2px;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    white-space:pre;
+    width: 200px%;
+}
